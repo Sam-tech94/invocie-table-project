@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registerForm/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+   <section id="login-window">
+       <h1>LOGIN</h1>
+       <form id="login" action="invoice.html" method="post">
+           <p id="error">No valid username and password</p>
+           <input
+                type="text"
+                placeholder="Enter Your Username"
+                autocomplete="off"
+                class="form-input"
+                id="username"
+           >
+           <p class="error" id="username-error">* Username is required !</p> 
+           
+           <input
+                type="password"
+                placeholder="Enter Your Password"
+                autocomplete="off"
+                class="form-input"
+                id="password"
+           >
+           <p class="error" id="password-error">* Password is required !</p>
+           
+           <button class="login-btn" type="button" onclick="getInfo()">Login</button>
+       </form>
+   </section>
+   
+   <script src="./registerForm/main.js"></script>
+</body>  
+</html>
